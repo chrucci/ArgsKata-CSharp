@@ -3,17 +3,9 @@ using System.Linq;
 
 namespace CommandLineTools
 {
-    public class Parser
+    public static class Parser
     {
-        // private readonly string _args;
         private const string ArgPrefix = "-";
-        // private Dictionary<string, string> parsedArguments;
-
-        // public Parser(string[] args)
-        // {
-        //     _args = args;
-        //     this.parsedArguments = Parse(args);
-        // }
 
         public static Dictionary<string, string> Parse(string[] args)
         {
@@ -48,16 +40,5 @@ namespace CommandLineTools
             if (arg is null) return false;
             return arg.StartsWith(ArgPrefix);
         }
-
-        //
-        // public bool GetBooleanValue(BooleanArgument arg)
-        // {
-        //     return (_args.Contains(ArgPrefix + arg.ArgFlag));
-        // }
-        //
-        // public string GetStringValue(IStringArgument arg)
-        // {
-        //     return "foo";
-        // }
     }
 }

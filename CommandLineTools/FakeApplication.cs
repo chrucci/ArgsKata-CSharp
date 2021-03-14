@@ -25,10 +25,5 @@ namespace CommandLineTools
             var port = portArg.GetIntegerValue(parsedArguments);
             _runner.RunApplication(logging, category, port);
         }
-
-        private static void Run(bool logging, string category)
-        {
-            Console.WriteLine($"Logging: {logging} and Category: {category}");
-        }
     }
 }
