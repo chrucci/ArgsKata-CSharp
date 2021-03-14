@@ -32,5 +32,18 @@ namespace CommandLineToolsTests
             app.Main(args);
             runner.Verify(mockedRunner => mockedRunner.RunApplication(loggingVal, categoryVal, portVal));
         }
+        
+        [Test]
+        public void Main_WhenPassedMissingOptionalArgs_CallsRunnerWithAllParams()
+        {
+            var loggingVal = false;
+            var categoryVal = "foo";
+            var portVal = 8080;
+            var args = new string[] {"-c", categoryVal, "-p", portVal.ToString()};
+            Mock<IRunner> runner = new Mock<IRunner>();
+            var app = new FakeApplication(runner.Object);
+            app.Main(args);
+            runner.Verify(mockedRunner => mockedRunner.RunApplication(loggingVal, categoryVal, portVal));
+        }
     }
 }
