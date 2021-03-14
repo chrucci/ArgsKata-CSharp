@@ -4,7 +4,7 @@ namespace CommandLineTools
 {
     public class InvalidArgumentException : ApplicationException
     {
-        public InvalidArgumentException(char flagName):base($"Flag '{flagName}' must be included in the list of arguments.")
+        public InvalidArgumentException(string flagName):base($"Flag '{flagName}' must be included in the list of arguments.")
         {
         }
     }

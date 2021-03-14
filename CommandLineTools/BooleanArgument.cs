@@ -1,29 +1,20 @@
-﻿namespace CommandLineTools
+﻿using System.Collections.Generic;
+
+namespace CommandLineTools
 {
     public class BooleanArgument
     {
-        private readonly char _argFlag;
-        private bool _isRegistered;
-        public bool Value { get; set; }
-        private readonly bool _isMandatory;
+        public string ArgFlag { get; }
 
-        public BooleanArgument(char argFlag, bool isMandatory = false)
+        public BooleanArgument(string argFlag)
         {
-            _argFlag = argFlag;
-            _isMandatory = isMandatory;
-            Value = true;
+            ArgFlag = argFlag;
         }
 
-        public bool IsValid()
-        {
-            if (_isMandatory && !_isRegistered)
-                throw new InvalidArgumentException(_argFlag);
-            return true;
-        }
 
-        public void Register()
+        public bool? GetBooleanValue(Dictionary<string,string> parsedArgs)
         {
-            _isRegistered = true;
+            return parsedArgs.ContainsKey(ArgFlag);
         }
     }
 }
