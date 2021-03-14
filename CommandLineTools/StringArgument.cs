@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CommandLineTools
 {
-    public class StringArgument : IStringArgument
+    public class StringArgument 
     {
         private readonly bool _isMandatory;
         private readonly string _flag;

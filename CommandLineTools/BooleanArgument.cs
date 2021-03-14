@@ -12,7 +12,7 @@ namespace CommandLineTools
         }
 
 
-        public bool? GetBooleanValue(Dictionary<string,string> parsedArgs)
+        public bool GetBooleanValue(Dictionary<string,string> parsedArgs)
         {
             return parsedArgs.ContainsKey(ArgFlag);
         }

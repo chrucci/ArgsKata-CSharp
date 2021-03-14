@@ -14,9 +14,8 @@ namespace CommandLineToolsTests
         {
             var flag = "-l";
             var arg = new BooleanArgument(flag);
-            var parsedArgs = new Dictionary<string, string>();
-            parsedArgs.Add(flag, null);
-            
+            var parsedArgs = new Dictionary<string, string> {{flag, null}};
+
             Assert.IsTrue(arg.GetBooleanValue(parsedArgs));
         }
 

@@ -14,9 +14,8 @@ namespace CommandLineToolsTests
             var expected = "foo";
             var flag = "-c";
             var arg = new StringArgument(flag);
-            var parsedArguments = new Dictionary<string, string>();
-            parsedArguments.Add(flag, expected);
-            
+            var parsedArguments = new Dictionary<string, string> {{flag, expected}};
+
             Assert.AreEqual(expected, arg.GetStringValue(parsedArguments));
         }
         
