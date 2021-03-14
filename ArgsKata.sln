@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLineTools", "CommandLineTools\CommandLineTools.csproj", "{8A51B661-66B5-4E24-900C-09C523045380}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLineToolsTests", "CommandLineToolsTests\CommandLineToolsTests.csproj", "{903B851E-37F6-432A-9521-3BAD737C8336}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A51B661-66B5-4E24-900C-09C523045380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A51B661-66B5-4E24-900C-09C523045380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A51B661-66B5-4E24-900C-09C523045380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A51B661-66B5-4E24-900C-09C523045380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903B851E-37F6-432A-9521-3BAD737C8336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903B851E-37F6-432A-9521-3BAD737C8336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903B851E-37F6-432A-9521-3BAD737C8336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903B851E-37F6-432A-9521-3BAD737C8336}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
