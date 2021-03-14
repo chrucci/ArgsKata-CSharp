@@ -39,4 +39,16 @@ a suitable default value should be returned. For example
 If the arguments given do not match the schema, it is important that a good error message is given, explaining exactly
 what is wrong.
 
+- schema with flags and type
+- Flag types
+  - bool
+  - int
+  - string
+
+- urgency
+  - default
+  - mandatory
+
+Requires Error Message
+
 Emily Bache's *Coding Dojo Handbook*
